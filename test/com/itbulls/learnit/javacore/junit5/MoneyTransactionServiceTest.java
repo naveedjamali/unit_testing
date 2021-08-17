@@ -103,7 +103,7 @@ class MoneyTransactionServiceTest {
 	void shouldThrowExceptionWhenTransferZeroAmount() {
 		Account accountFrom = new Account(RANDOM_MONEY_AMOUNT);
 		Account accountTo = new Account(RANDOM_MONEY_AMOUNT);
-		
+		// Assertion 
 		assertThrows(IllegalArgumentException.class,()->testInstance.transferMoney(accountFrom, accountTo, ZERO_MONEY_AMOUNT));
 		
 		
